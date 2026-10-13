@@ -1,15 +1,75 @@
+
 <!DOCTYPE html>
 <html lang="id">
 
 <head>
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Tentang Saya - Akbar Julianto</title>
 
-    <link rel="icon"
-          type="image/x-icon"
-          href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <style>
+        /* GRAFITI MENU NAVIGASI */
+        .menu-grafiti {
+            background-color: #202020;
+            padding: 20px 10px;
+            text-align: center;
+            border-bottom: 4px solid #ff00cc;
+        }
+
+        .menu-grafiti a {
+            display: inline-block;
+            color: #00ffff;
+            font-family: Impact, "Arial Black", sans-serif;
+            font-size: 19px;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin: 8px 5px;
+            padding: 8px;
+
+            /* Efek tulisan grafiti */
+            text-shadow:
+                2px 2px 0 #ff0080,
+                4px 4px 0 #5b2cff;
+
+            transition: all 0.3s ease;
+        }
+
+        /* EFEK SAAT KURSOR DIARAHKAN */
+        .menu-grafiti a:hover {
+            color: #ffff00;
+            transform: scale(1.15) rotate(-3deg);
+
+            text-shadow:
+                2px 2px 0 #ff0080,
+                4px 4px 0 #00ffff,
+                0 0 15px #ff00cc;
+        }
+
+        /* PEMISAH MENU */
+        .pemisah {
+            color: #ff00cc;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* TAMPILAN DI LAYAR HP */
+        @media (max-width: 600px) {
+            table {
+                width: 100%;
+            }
+
+            .menu-grafiti a {
+                font-size: 15px;
+                margin: 5px 2px;
+                padding: 5px;
+            }
+        }
+    </style>
 
 </head>
 
@@ -19,7 +79,7 @@
 
 <table border="1"
        width="800px"
-       cellpadding="12px"
+       cellpadding="12"
        align="center"
        bgcolor="white">
 
@@ -51,39 +111,30 @@
 
     </tr>
 
-
-    <!-- MENU -->
+    <!-- MENU GRAFITI -->
     <tr>
 
-        <td colspan="2"
-            bgcolor="#9FA8DA">
+        <td colspan="2" class="menu-grafiti">
 
-            <a href="index.html">
-                Beranda
-            </a> |
+            <a href="index.html">Beranda</a>
+            <span class="pemisah">|</span>
 
-            <a href="tentangsaya.html">
-                Tentang Saya
-            </a> |
+            <a href="tentangsaya.html">Tentang Saya</a>
+            <span class="pemisah">|</span>
 
-            <a href="kampusku.html">
-                KampusKu
-            </a> |
+            <a href="kampusku.html">KampusKu</a>
+            <span class="pemisah">|</span>
 
-            <a href="syair-lagu.html">
-                Syair Lagu
-            </a>
+            <a href="syair-lagu.html">Syair Lagu</a>
 
         </td>
 
     </tr>
 
-
     <!-- CONTENT -->
     <tr>
 
-        <td width="75%"
-            valign="top">
+        <td width="75%" valign="top">
 
             <h2 align="center">
                 Tentang Saya
@@ -112,68 +163,26 @@
                 yang bermanfaat bagi orang lain.
             </p>
 
-
-            <h3>
-                Data Diri
-            </h3>
+            <h3>Data Diri</h3>
 
             <ul>
-
-                <li>
-                    Nama: Akbar Julianto
-                </li>
-
-                <li>
-                    Status: Mahasiswa
-                </li>
-
-                <li>
-                    Bidang yang diminati: Teknologi Informasi
-                </li>
-
-                <li>
-                    Hobi: Belajar dan mendengarkan musik
-                </li>
-
-                <li>
-                    Minat: Website dan Pemrograman
-                </li>
-
+                <li>Nama: Akbar Julianto</li>
+                <li>Status: Mahasiswa</li>
+                <li>Bidang yang diminati: Teknologi Informasi</li>
+                <li>Hobi: Belajar dan mendengarkan musik</li>
+                <li>Minat: Website dan Pemrograman</li>
             </ul>
 
-
-            <h3>
-                Kemampuan yang Sedang Dipelajari
-            </h3>
+            <h3>Kemampuan yang Sedang Dipelajari</h3>
 
             <ul>
-
-                <li>
-                    HTML
-                </li>
-
-                <li>
-                    CSS
-                </li>
-
-                <li>
-                    JavaScript
-                </li>
-
-                <li>
-                    PHP
-                </li>
-
-                <li>
-                    Database
-                </li>
-
-                <li>
-                    Pengembangan Website
-                </li>
-
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Database</li>
+                <li>Pengembangan Website</li>
             </ul>
-
 
             <p>
                 Saya ingin terus mengembangkan kemampuan dan
@@ -184,48 +193,34 @@
 
         </td>
 
-
         <!-- SIDEBAR -->
         <td width="25%"
             bgcolor="#F5F5F5"
             valign="top">
 
-            <h3>
-                Tautan
-            </h3>
+            <h3>Tautan</h3>
 
             <ul>
-
                 <li>
-                    <a href="index.html">
-                        Beranda
-                    </a>
+                    <a href="index.html">Beranda</a>
                 </li>
 
                 <li>
-                    <a href="tentangsaya.html">
-                        Tentang Saya
-                    </a>
+                    <a href="tentangsaya.html">Tentang Saya</a>
                 </li>
 
                 <li>
-                    <a href="kampusku.html">
-                        KampusKu
-                    </a>
+                    <a href="kampusku.html">KampusKu</a>
                 </li>
 
                 <li>
-                    <a href="syair-lagu.html">
-                        Syair Lagu
-                    </a>
+                    <a href="syair-lagu.html">Syair Lagu</a>
                 </li>
-
             </ul>
 
         </td>
 
     </tr>
-
 
     <!-- FOOTER -->
     <tr>
@@ -251,5 +246,4 @@
 <br>
 
 </body>
-
 </html>
