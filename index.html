@@ -1,16 +1,75 @@
+
 <!DOCTYPE html>
 <html lang="id">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akbar Julianto - Beranda</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <style>
+
+        .menu-grafiti {
+            background-color: #202020;
+            padding: 20px 10px;
+            text-align: center;
+            border-bottom: 4px solid #ff00cc;
+        }
+
+        .menu-grafiti a {
+            display: inline-block;
+            color: #00ffff;
+            font-family: Impact, "Arial Black", sans-serif;
+            font-size: 19px;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin: 8px 5px;
+            padding: 8px;
+
+       
+            text-shadow:
+                2px 2px 0 #ff0080,
+                4px 4px 0 #5b2cff;
+
+            transition: all 0.3s ease;
+        }
+
+        
+        .menu-grafiti a:hover {
+            color: #ffff00;
+            transform: scale(1.15) rotate(-3deg);
+
+            text-shadow:
+                2px 2px 0 #ff0080,
+                4px 4px 0 #00ffff,
+                0 0 15px #ff00cc;
+        }
+
+      
+        .pemisah {
+            color: #ff00cc;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        
+        @media (max-width: 600px) {
+            .menu-grafiti a {
+                font-size: 15px;
+                margin: 5px 2px;
+            }
+        }
+    </style>
 </head>
 
 <body bgcolor="#E8EAF6">
 
 <br>
-<table border="1" width="800px" cellpadding="12px" align="center" bgcolor="white">
+
+<table border="1" width="800px" cellpadding="12px"
+       align="center" bgcolor="white">
 
     <!-- HEADER -->
     <tr>
@@ -36,49 +95,34 @@
         </td>
     </tr>
 
-
-    <!-- MENU -->
+  
     <tr>
+        <td colspan="2" class="menu-grafiti">
 
-        <td colspan="2" bgcolor="#9FA8DA">
+            <a href="index.html">Beranda</a>
+            <span class="pemisah">|</span>
 
-            <a href="index.html">Beranda</a> |
+            <a href="tentangsaya.html">Tentang Saya</a>
+            <span class="pemisah">|</span>
 
-            <a href="tentangsaya.html">
-                Tentang Saya
-            </a> |
+            <a href="Kampusku.html">KampusKu</a>
+            <span class="pemisah">|</span>
 
-            <a href="Kampusku.html">
-                KampusKu
-            </a> |
-
-            <a href="syair-lagu.html">
-                Syair Lagu
-            </a>
+            <a href="syair-lagu.html">Syair Lagu</a>
 
         </td>
-
     </tr>
-
 
     <!-- CONTENT -->
     <tr>
-
         <td width="75%" valign="top">
 
-            <h2 align="center">
-                Berita Terbaru
-            </h2>
+            <h2 align="center">Berita Terbaru</h2>
 
-
-            <h2>
-                Teknologi Digital di Kehidupan Sehari-hari
-            </h2>
+            <h2>Teknologi Digital di Kehidupan Sehari-hari</h2>
 
             <p>
-                <small>
-                    <em>8 Oktober 2026</em>
-                </small>
+                <small><em>8 Oktober 2026</em></small>
             </p>
 
             <p>
@@ -101,15 +145,10 @@
 
             <hr>
 
-
-            <h2>
-                Pentingnya Semangat Belajar
-            </h2>
+            <h2>Pentingnya Semangat Belajar</h2>
 
             <p>
-                <small>
-                    <em>7 Oktober 2026</em>
-                </small>
+                <small><em>7 Oktober 2026</em></small>
             </p>
 
             <p>
@@ -129,10 +168,7 @@
 
             <hr>
 
-
-            <h2>
-                Membuat Karya dari Hal Sederhana
-            </h2>
+            <h2>Membuat Karya dari Hal Sederhana</h2>
 
             <p>
                 Banyak karya besar dimulai dari sebuah ide
@@ -149,64 +185,43 @@
 
         </td>
 
-
         <!-- SIDEBAR -->
         <td width="25%" bgcolor="#F5F5F5" valign="top">
 
-            <h3>
-                Tautan
-            </h3>
+            <h3>Tautan</h3>
 
             <ul>
-
                 <li>
-                    <a href="index.html">
-                        Beranda
-                    </a>
+                    <a href="index.html">Beranda</a>
                 </li>
 
                 <li>
-                    <a href="tentangsaya.html">
-                        Tentang Saya
-                    </a>
+                    <a href="tentangsaya.html">Tentang Saya</a>
                 </li>
 
                 <li>
-                    <a href="kampusku.html">
-                        KampusKu
-                    </a>
+                    <a href="kampusku.html">KampusKu</a>
                 </li>
 
                 <li>
-                    <a href="syair-lagu.html">
-                        Syair Lagu
-                    </a>
+                    <a href="syair-lagu.html">Syair Lagu</a>
                 </li>
-
             </ul>
 
         </td>
-
     </tr>
-
 
     <!-- FOOTER -->
     <tr>
-
-        <td colspan="2"
-            align="right"
-            bgcolor="#1A237E">
+        <td colspan="2" align="right" bgcolor="#1A237E">
 
             <font color="white">
-
                 <small>
                     &copy; Copyright Akbar Julianto, 2026.
                 </small>
-
             </font>
 
         </td>
-
     </tr>
 
 </table>
@@ -214,5 +229,4 @@
 <br>
 
 </body>
-
 </html>
