@@ -1,0 +1,205 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contoh Menu Horizontal</title>
+
+  <style>
+    /* Pengaturan dasar */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: #263248;
+      background: linear-gradient(135deg, #edf2ff, #f8faff);
+      min-height: 100vh;
+    }
+
+    /* Kotak utama */
+    body > p,
+    .menu,
+    ol {
+      max-width: 850px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    body > p:first-of-type {
+      margin-top: 0;
+    }
+
+    /* Judul pembuka */
+    body > p:first-of-type {
+      padding: 30px;
+      border-radius: 18px;
+      background: white;
+      font-size: 25px;
+      font-weight: bold;
+      box-shadow: 0 10px 25px rgba(42, 64, 110, 0.10);
+      border-left: 5px solid #5577e8;
+    }
+
+    /* Grafik dekoratif menggunakan CSS */
+    body > p:first-of-type::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 65px;
+      margin-top: 22px;
+      border-radius: 10px;
+      background:
+        linear-gradient(135deg, transparent 45%, #91a8ff 46%, #91a8ff 48%, transparent 49%),
+        linear-gradient(155deg, transparent 54%, #5577e8 55%, #5577e8 57%, transparent 58%),
+        linear-gradient(to top, #dce5ff 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 100% 16px;
+      background-color: #f4f6ff;
+    }
+
+    /* Menu horizontal */
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      list-style: none;
+      margin-top: 25px;
+      margin-bottom: 30px;
+      padding: 15px;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(42, 64, 110, 0.10);
+    }
+
+    .menu li {
+      display: inline-block;
+    }
+
+    .menu a {
+      display: block;
+      text-decoration: none;
+      color: #42516d;
+      font-weight: 600;
+      padding: 13px 18px;
+      border-radius: 10px;
+      transition: 0.3s ease;
+    }
+
+    .menu a:hover {
+      color: white;
+      background: #5577e8;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(85, 119, 232, 0.3);
+    }
+
+    /* Bagian penjelasan */
+    body > p:nth-of-type(2) {
+      max-width: 850px;
+      margin: 0 auto 18px;
+      line-height: 1.8;
+      color: #536078;
+    }
+
+    /* Daftar pilihan */
+    ol {
+      padding: 20px 20px 20px 45px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(42, 64, 110, 0.08);
+    }
+
+    ol li {
+      padding: 10px 5px;
+      color: #536078;
+    }
+
+    ol a {
+      color: #4d6fe0;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    ol a:hover {
+      color: #263fa8;
+      text-decoration: underline;
+    }
+
+    /* Tombol kembali */
+    body > p:last-of-type {
+      text-align: center;
+      margin-top: 28px;
+    }
+
+    body > p:last-of-type a {
+      display: inline-block;
+      padding: 12px 22px;
+      color: white;
+      background: #263248;
+      text-decoration: none;
+      border-radius: 10px;
+      box-shadow: 0 5px 0 #151e30;
+      transition: 0.2s;
+    }
+
+    body > p:last-of-type a:hover {
+      background: #405477;
+      transform: translateY(-2px);
+      box-shadow: 0 7px 0 #151e30;
+    }
+
+    /* Tampilan HP */
+    @media (max-width: 600px) {
+      body {
+        padding: 25px 14px;
+      }
+
+      body > p:first-of-type {
+        font-size: 21px;
+        padding: 22px;
+      }
+
+      .menu {
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .menu a {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<p>Ini adalah HTML dengan CSS dan Inline-Block.</p>
+
+<ul class="menu">
+  <li><a href="beranda.html">Beranda</a></li>
+  <li><a href="sekolahku.html">Sekolahku</a></li>
+  <li><a href="tentang-saya.html">Tentang Saya</a></li>
+  <li><a href="syair-lagu.html">Syair Lagu</a></li>
+</ul>
+
+<p>
+  Dengan CSS, list di atas dapat diubah menjadi menu horizontal.
+  <br>
+  Ada dua cara mengubah list menjadi menu horizontal:
+</p>
+
+<ol>
+  <li><a href="flexbox.html">Menggunakan Flexbox</a></li>
+  <li><a href="inline-block.html">Menggunakan Inline-block</a></li>
+</ol>
+
+<p><a href="./">Kembali ke HTML tanpa CSS.</a></p>
+
+</body>
+</html>
+```
