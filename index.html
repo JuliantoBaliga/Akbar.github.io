@@ -1,246 +1,123 @@
 
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akbar Julianto - Beranda</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-
+    <title>Beranda - Akbar Julianto</title>
     <style>
-
-        .menu-grafiti {
-            background-color: #202020;
-            padding: 20px 10px;
-            text-align: center;
-            border-bottom: 4px solid #ff00cc;
+        * { box-sizing: border-box; }
+        body {
+            margin: 0; padding: 20px 0;
+            background: #E8EAF6; color: #334155;
+            font-family: "Segoe UI", Arial, sans-serif; line-height: 1.8;
         }
-
-        .menu-grafiti a {
-            display: inline-block;
-            color: #00ffff;
-            font-family: Impact, "Arial Black", sans-serif;
-            font-size: 19px;
-            font-weight: bold;
+        .site {
+            width: min(900px, 94%); margin: auto; overflow: hidden;
+            border-radius: 18px; background: white;
+            box-shadow: 0 20px 45px #312e811f, 0 6px 15px #0f172a10;
+        }
+        header {
+            padding: 30px 20px; text-align: center; color: white;
+            background: linear-gradient(135deg,#3730A3,#4F46E5,#6366F1);
+            border-bottom: 4px solid #A5B4FC;
+        }
+        header h1 { margin: 0; font-size: clamp(28px,5vw,38px); text-shadow: 0 3px 10px #0f172a40; }
+        header p { margin: 5px 0 0; color: #E0E7FF; }
+        nav {
+            display: flex; justify-content: center; flex-wrap: wrap;
+            gap: 10px; padding: 15px; background: #F8FAFF;
+            border-bottom: 1px solid #E0E7FF;
+        }
+        nav a {
+            padding: 8px 14px; border-radius: 9px; background: white;
+            color: #4F46E5; font-size: 14px; font-weight: 650;
             text-decoration: none;
-            text-transform: uppercase;
-            margin: 8px 5px;
-            padding: 8px;
-
-       
-            text-shadow:
-                2px 2px 0 #ff0080,
-                4px 4px 0 #5b2cff;
-
-            transition: all 0.3s ease;
+            box-shadow: 0 3px 0 #D8DDFB, 0 5px 12px #4f46e512;
+            transition: .2s;
         }
-
-        
-        .menu-grafiti a:hover {
-            color: #ffff00;
-            transform: scale(1.15) rotate(-3deg);
-
-            text-shadow:
-                2px 2px 0 #ff0080,
-                4px 4px 0 #00ffff,
-                0 0 15px #ff00cc;
+        nav a:hover, nav a.active {
+            color: white; background: #4F46E5; transform: translateY(-2px);
+            box-shadow: 0 4px 0 #3730A3, 0 8px 15px #4f46e529;
         }
-
-      
-        .pemisah {
-            color: #ff00cc;
-            font-size: 22px;
-            font-weight: bold;
+        .layout {
+            display: grid; grid-template-columns: minmax(0,3fr) minmax(190px,1.15fr);
+            gap: 14px; padding: 14px;
         }
-
-        
-        @media (max-width: 600px) {
-            .menu-grafiti a {
-                font-size: 15px;
-                margin: 5px 2px;
-            }
+        main, aside { min-width: 0; padding: 24px; border-radius: 13px; }
+        main { background: white; }
+        aside { background: #F8FAFF; border: 1px solid #EEF2FF; }
+        h2 {
+            margin: 0 0 22px; padding-bottom: 10px; text-align: center;
+            color: #3730A3; font-size: 27px; border-bottom: 2px solid #E0E7FF;
+        }
+        h3 { color: #4338CA; margin: 22px 0 10px; }
+        .intro {
+            padding: 15px 17px; border-radius: 10px; background: #F1F5FF;
+            box-shadow: inset 0 2px 5px #4f46e50a;
+        }
+        aside h3 { margin-top: 0; padding-bottom: 8px; border-bottom: 2px solid #E0E7FF; }
+        aside ul { padding-left: 18px; }
+        aside li { margin: 10px 0; color: #A5B4FC; }
+        aside a { color: #64748B; text-decoration: none; font-size: 13px; }
+        aside a:hover { color: #4F46E5; }
+        .note { margin-top: 25px; padding-top: 15px; color: #8492B5; font-size: 13px; border-top: 1px solid #DDE5FF; }
+        footer {
+            padding: 16px 22px; text-align: right; color: #E0E7FF;
+            background: linear-gradient(120deg,#312E81,#4338CA);
+            border-top: 3px solid #818CF8; font-size: 12px;
+        }
+        @media(max-width:650px) {
+            body { padding: 10px 0; }
+            .site { width: 96%; border-radius: 12px; }
+            .layout { grid-template-columns: 1fr; padding: 10px; }
+            main, aside { padding: 19px; }
+            h2 { font-size: 23px; }
+            nav { gap: 8px; padding: 12px 8px; }
+            nav a { padding: 8px 10px; font-size: 12px; }
+            footer { text-align: center; }
+        }
+        @media(prefers-reduced-motion:reduce) {
+            *,*::before,*::after { transition: none !important; }
         }
     </style>
 </head>
-
-<body bgcolor="#E8EAF6">
-
-<br>
-
-<table border="1" width="800px" cellpadding="12px"
-       align="center" bgcolor="white">
-
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akbar Julianto</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 <body>
-
-    <!-- HEADER -->
-    <tr>
-
-        <td colspan="2"
-            align="center"
-            bgcolor="#3949AB">
-
-            <font color="white">
-
-                <p>&nbsp;</p>
-
-                <h1>Akbar Julianto</h1>
-
-                <p>
-                    <em>
-                        Website pribadi untuk berbagi informasi,
-                        pengalaman, dan karya.
-                    </em>
-                </p>
-
-                <p>&nbsp;</p>
-
-            </font>
-
-        </td>
-
-    </tr>
-
- 
-        <td colspan="2" class="menu-grafiti">
-
-            <a href="index.html">Beranda</a>
-            <span class="pemisah">|</span>
-
-            <a href="tentangsaya.html">Tentang Saya</a>
-            <span class="pemisah">|</span>
-
-            <a href="Kampusku.html">KampusKu</a>
-            <span class="pemisah">|</span>
-
-            <a href="syair-lagu.html">Syair Lagu</a>
-
-        </td>
-    </tr>
-
-    <!-- CONTENT -->
-    <tr>
-        <td width="75%" valign="top">
-
-            <h2 align="center">Berita Terbaru</h2>
-
-            <h2>Teknologi Digital di Kehidupan Sehari-hari</h2>
-
-            <p>
-                <small><em>8 Oktober 2026</em></small>
-            </p>
-
-            <p>
-                Perkembangan teknologi digital memberikan
-                perubahan besar dalam kehidupan manusia.
-                Berbagai aktivitas seperti belajar,
-                berkomunikasi, bekerja, dan mencari informasi
-                sekarang dapat dilakukan dengan bantuan
-                teknologi.
-            </p>
-
-            <p>
-                Internet juga memberikan kesempatan kepada
-                siapa saja untuk belajar dan mengembangkan
-                kemampuan. Dengan perangkat yang sederhana,
-                seseorang dapat mempelajari pemrograman,
-                desain, bisnis digital, dan berbagai bidang
-                lainnya.
-            </p>
-
-            <hr>
-
-            <h2>Pentingnya Semangat Belajar</h2>
-
-            <p>
-                <small><em>7 Oktober 2026</em></small>
-            </p>
-
-            <p>
-                Belajar merupakan proses yang tidak berhenti
-                setelah seseorang menyelesaikan pendidikan.
-                Dunia terus berubah sehingga kemampuan untuk
-                mempelajari sesuatu yang baru menjadi sangat
-                penting.
-            </p>
-
-            <p>
-                Dengan memiliki semangat belajar, seseorang
-                dapat meningkatkan kemampuan, menemukan
-                pengalaman baru, dan mempersiapkan diri untuk
-                menghadapi berbagai tantangan di masa depan.
-            </p>
-
-            <hr>
-
-            <h2>Membuat Karya dari Hal Sederhana</h2>
-
-            <p>
-                Banyak karya besar dimulai dari sebuah ide
-                sederhana. Hal yang paling penting adalah
-                keberanian untuk mencoba dan kemauan untuk
-                terus memperbaiki kesalahan.
-            </p>
-
-            <p>
-                Melalui website ini, saya ingin berbagi
-                informasi dan beberapa hal yang sedang saya
-                pelajari.
-            </p>
-
-        </td>
-
-      
-<!-- SIDEBAR GRAFITI -->
-<td width="25%" class="tautan-grafiti" valign="top">
-
-    <h3>Tautan</h3>
-
-    <ul>
-        <li>
-            <a href="index.html">Beranda</a>
-        </li>
-
-        <li>
-            <a href="tentangsaya.html">Tentang Saya</a>
-        </li>
-
-        <li>
-            <a href="kampusku.html">KampusKu</a>
-        </li>
-
-        <li>
-            <a href="syair-lagu.html">Syair Lagu</a>
-        </li>
-    </ul>
-
-</td>
-
-
-    <!-- FOOTER -->
-    <tr>
-        <td colspan="2" align="right" bgcolor="#1A237E">
-
-            <font color="white">
-                <small>
-                    &copy; Copyright Akbar Julianto, 2026.
-                </small>
-            </font>
-
-        </td>
-    </tr>
-
-</table>
-
-<br>
-
+<div class="site">
+    <header>
+        <h1>Akbar Julianto</h1>
+        <p>Website pribadi untuk berbagi informasi, pengalaman, dan karya.</p>
+    </header>
+    <nav>
+        <a href="index.html" class="active">Beranda</a>
+        <a href="tentangsaya.html">Tentang Saya</a>
+        <a href="kampusku.html">KampusKu</a>
+        <a href="syair-lagu.html">Syair Lagu</a>
+    </nav>
+    <div class="layout">
+        <main>
+            <h2>Selamat Datang</h2>
+            <div class="intro">
+                <h3>Halo, saya Akbar Julianto!</h3>
+                <p>Selamat datang di website pribadi saya. Website ini menjadi tempat untuk berbagi informasi, pengalaman, kegiatan, dan karya.</p>
+            </div>
+            <h3>Jelajahi Website</h3>
+            <p>Gunakan menu navigasi di atas untuk mengenal saya lebih jauh, melihat informasi tentang kampus, atau membaca kumpulan syair lagu.</p>
+            <p>Saya berharap website sederhana ini menjadi ruang yang bermanfaat untuk belajar dan berkarya.</p>
+            <p class="note">Terima kasih sudah berkunjung ke website pribadi Akbar Julianto.</p>
+        </main>
+        <aside>
+            <h3>Tautan</h3>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentangsaya.html">Tentang Saya</a></li>
+                <li><a href="kampusku.html">KampusKu</a></li>
+                <li><a href="syair-lagu.html">Syair Lagu</a></li>
+            </ul>
+        </aside>
+    </div>
+    <footer>&copy; Copyright Akbar Julianto, 2026.</footer>
+</div>
 </body>
 </html>
+
